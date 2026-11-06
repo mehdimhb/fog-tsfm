@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "sample_rate_hz": 60.0,
+  "signal_columns": [
+    "ankleL_acc_x",
+    "ankleL_acc_y",
+    "ankleL_acc_z",
+    "ankleL_gyro_x",
+    "ankleL_gyro_y",
+    "ankleL_gyro_z",
+    "ankleR_acc_x",
+    "ankleR_acc_y",
+    "ankleR_acc_z",
+    "ankleR_gyro_x",
+    "ankleR_gyro_y",
+    "ankleR_gyro_z",
+    "back_acc_x",
+    "back_acc_y",
+    "back_acc_z",
+    "back_gyro_x",
+    "back_gyro_y",
+    "back_gyro_z",
+    "wrist_acc_x",
+    "wrist_acc_y",
+    "wrist_acc_z",
+    "wrist_gyro_x",
+    "wrist_gyro_y",
+    "wrist_gyro_z"
+  ],
+  "identity_columns": ["subjectID", "sessionID", "taskID"],
+  "optional_label_column": "fog",
+  "optional_timestamp_column": "timestamp",
+  "timestamp_tolerance_fraction": 0.05,
+  "filter": {
+    "enabled": true,
+    "order": 4,
+    "low_hz": 0.5,
+    "high_hz": 20.0,
+    "short_valid_run_policy": "error"
+  },
+  "windows": {
+    "duration_seconds": 2.0,
+    "hop_seconds": 0.5,
+    "anchor_policy": "current center sample",
+    "boundary_policy": "symmetric zero padding hidden by Boolean mask",
+    "window_mean_removal": true
+  },
+  "privacy": {
+    "pseudonym_salt": "change-this-local-salt-before-sharing-identifiers"
+  }
+}
+

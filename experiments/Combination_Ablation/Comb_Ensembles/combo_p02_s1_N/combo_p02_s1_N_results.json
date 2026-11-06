@@ -1,0 +1,26 @@
+{
+    "combo": "p02_s1",
+    "ensemble": "N",
+    "num_channels": 6,
+    "best_epoch": 7,
+    "validation": {
+        "val/loss/Loss": 0.3287771940231323,
+        "val/loss/Total": 0.3287771940231323,
+        "val/metric/Accuracy": 0.833142876625061,
+        "val/metric/Pos-F1": 0.4267015755176544,
+        "val/metric/Sensitivity": 0.318359375,
+        "val/metric/Specificity": 0.9578797817230225,
+        "val/metric/AUPRC": 0.7859283685684204,
+        "val/metric/AUROC": 0.8958141803741455
+    },
+    "test": {
+        "test/loss/Loss": 0.32278260588645935,
+        "test/loss/Total": 0.32278260588645935,
+        "test/metric/Accuracy": 0.8545531034469604,
+        "test/metric/Pos-F1": 0.5692883729934692,
+        "test/metric/Sensitivity": 0.4924406111240387,
+        "test/metric/Specificity": 0.9423782229423523,
+        "test/metric/AUPRC": 0.8016353845596313,
+        "test/metric/AUROC": 0.8871843814849854
+    }
+}
